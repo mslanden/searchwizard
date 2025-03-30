@@ -1,0 +1,50 @@
+SOFTWARE ENGINEER - BACKEND
+ABC Technologies, Inc.
+San Francisco, CA (Hybrid)
+
+ABOUT THE COMPANY:
+ABC Technologies is a fast-growing startup specializing in cloud-based solutions for the healthcare industry. We're on a mission to transform healthcare delivery through innovative technology.
+
+JOB OVERVIEW:
+We are seeking a talented Backend Software Engineer to join our engineering team. You will be responsible for designing, implementing, and maintaining our core backend services that power our healthcare platform.
+
+RESPONSIBILITIES:
+- Design and develop scalable and robust backend services and APIs
+- Collaborate with frontend developers to integrate user-facing elements
+- Optimize application performance and ensure high availability
+- Implement security and data protection measures
+- Write clean, maintainable, and well-tested code
+- Troubleshoot and debug issues in production environments
+- Participate in code reviews and contribute to technical documentation
+- Stay updated with emerging technologies and industry trends
+
+QUALIFICATIONS:
+- Bachelor's degree in Computer Science or related field
+- 3+ years of experience in backend development
+- Strong proficiency in Python and Django/Flask frameworks
+- Experience with RESTful APIs and microservices architecture
+- Knowledge of database systems, both SQL and NoSQL
+- Familiarity with cloud platforms (AWS, Azure, or GCP)
+- Understanding of CI/CD pipelines and DevOps practices
+- Excellent problem-solving and analytical skills
+- Strong communication and teamwork abilities
+
+PREFERRED SKILLS:
+- Experience with healthcare data or HIPAA compliance
+- Knowledge of containerization (Docker, Kubernetes)
+- Familiarity with message brokers (RabbitMQ, Kafka)
+- Experience with GraphQL
+- Open source contributions
+
+BENEFITS:
+- Competitive salary: $120,000 - $150,000 based on experience
+- Comprehensive health, dental, and vision insurance
+- 401(k) matching program
+- Flexible work arrangements (hybrid model)
+- Generous PTO and paid holidays
+- Professional development stipend
+- Employee wellness program
+- Stock options
+- Team building events and company retreats
+
+ABC Technologies is an equal opportunity employer committed to diversity and inclusion in the workplace.
