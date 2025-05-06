@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { 
   ArrowLeftIcon, 
-  UserIcon, 
+  /* UserIcon, */
   BuildingOfficeIcon, 
   AcademicCapIcon, 
   MapPinIcon, 

@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';
+// import useEffect from 'react';
+// import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import { PlusIcon, Squares2X2Icon, ListBulletIcon, UserIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
@@ -13,7 +14,7 @@ import ProjectList from './components/ProjectList';
 
 
 export default function Home() {
-  const router = useRouter();
+  // const router = useRouter();
   // Mock authentication and loading state for frontend-only demo
   const isAuthenticated = true;
   const authLoading = false;
@@ -45,8 +46,9 @@ export default function Home() {
       backgroundColor: 'light-cream',
     },
   ]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [loading] = useState(false);
+  const [error] = useState(null);
+  // const setLoading and setError will be used when implementing API calls
 
   // Handle project deletion
   const handleDeleteProject = (id) => {

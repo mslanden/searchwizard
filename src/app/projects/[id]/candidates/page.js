@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeftIcon, UserGroupIcon, FunnelIcon, MagnifyingGlassIcon, ChevronDownIcon, CheckCircleIcon, ClockIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, UserGroupIcon, FunnelIcon, MagnifyingGlassIcon, ChevronDownIcon, /* CheckCircleIcon, */ ClockIcon } from '@heroicons/react/24/outline';
 import Header from '../../../components/Header';
 
 // Mock data fetching function
-const getCandidatesData = (projectId) => {
+const getCandidatesData = (/* projectId */) => {
   return {
     totalCandidates: 48,
     shortlisted: 12,
