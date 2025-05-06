@@ -13,7 +13,8 @@ export default function Settings() {
   const [activeTab, setActiveTab] = useState('role'); // 'role' or 'candidate'
   const [selectedTemplate, setSelectedTemplate] = useState('professional');
   const [customPrompt, setCustomPrompt] = useState('');
-  const [isEditingPrompt, setIsEditingPrompt] = useState(false);
+  // These state variables will be used in future updates
+  // const [isEditingPrompt, setIsEditingPrompt] = useState(false);
   const [showCustomPromptForm, setShowCustomPromptForm] = useState(false);
   const [customPromptName, setCustomPromptName] = useState('');
   const [customPrompts, setCustomPrompts] = useState([

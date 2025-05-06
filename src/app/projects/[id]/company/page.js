@@ -6,7 +6,7 @@ import { ArrowLeftIcon, BuildingOfficeIcon, DocumentTextIcon, GlobeAltIcon, Phon
 import Header from '../../../components/Header';
 
 // Mock data fetching function
-const getCompanyData = (projectId) => {
+const getCompanyData = (/* projectId */) => {
   return {
     name: 'Agentica',
     industry: 'Technology',

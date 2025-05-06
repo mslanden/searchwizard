@@ -5,15 +5,15 @@ import Link from 'next/link';
 import { 
   ArrowLeftIcon, 
   UserIcon, 
-  AcademicCapIcon, 
+  /* AcademicCapIcon, */
   BriefcaseIcon, 
   CurrencyDollarIcon, 
   ClockIcon, 
   MapPinIcon, 
   CheckCircleIcon,
   DocumentTextIcon,
-  SparklesIcon,
-  DocumentDuplicateIcon,
+  /* SparklesIcon, */
+  /* DocumentDuplicateIcon, */
   DocumentCheckIcon,
   DocumentMagnifyingGlassIcon,
   LightBulbIcon,
@@ -23,7 +23,7 @@ import {
 import Header from '../../../components/Header';
 
 // Mock data fetching function
-const getRolesData = (projectId) => {
+const getRolesData = (/* projectId */) => {
   return {
     roles: [
       {
