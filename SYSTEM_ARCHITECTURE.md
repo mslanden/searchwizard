@@ -71,19 +71,19 @@ sequenceDiagram
 ```mermaid
 graph LR
     subgraph "Golden Examples Scope"
-        USER_EXAMPLES[User's Own Examples]
-        GLOBAL_EXAMPLES[Global Templates]
-        COMBINED[Combined View]
+        USER_EXAMPLES["User's Own Examples"]
+        GLOBAL_EXAMPLES["Global Templates"]
+        COMBINED["Combined View"]
     end
 
     subgraph "RLS Policies"
-        POLICY1[user_id = auth.uid()]
-        POLICY2[is_global = true]
-        OR_LOGIC[OR Logic]
+        POLICY1["user_id = auth.uid()"]
+        POLICY2["is_global = true"]
+        OR_LOGIC["OR Logic"]
     end
 
     subgraph "Database Query"
-        QUERY[SELECT * FROM golden_examples WHERE user_id = ? OR is_global = true]
+        QUERY["SELECT * FROM golden_examples<br/>WHERE user_id = ? OR is_global = true"]
     end
 
     USER_EXAMPLES --> OR_LOGIC
@@ -287,16 +287,16 @@ erDiagram
 ```mermaid
 graph TB
     subgraph "RLS Policy Flow"
-        REQUEST[Incoming Request]
-        AUTH_CHECK[auth.uid() Check]
-        POLICY_EVAL[Policy Evaluation]
-        DATA_ACCESS[Data Access Granted/Denied]
+        REQUEST["Incoming Request"]
+        AUTH_CHECK["auth.uid() Check"]
+        POLICY_EVAL["Policy Evaluation"]
+        DATA_ACCESS["Data Access Granted/Denied"]
     end
 
     subgraph "Golden Examples Policies"
-        USER_POLICY[user_id = auth.uid()]
-        GLOBAL_POLICY[is_global = true]
-        ADMIN_POLICY[is_admin_user(auth.uid())]
+        USER_POLICY["user_id = auth.uid()"]
+        GLOBAL_POLICY["is_global = true"]
+        ADMIN_POLICY["is_admin_user(auth.uid())"]
     end
 
     REQUEST --> AUTH_CHECK
