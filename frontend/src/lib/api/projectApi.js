@@ -39,15 +39,12 @@ export const projectApi = {
           throw new Error('Source URL is required for URL artifacts');
         }
         
-        // Process URL content via backend
-        const result = await storageApi.processUrlContent(
-          artifactData.sourceUrl,
-          artifactData.artifactType
-        );
-        processedContent = result?.processedContent || '';
+        // Store URL directly without backend processing for now
+        // TODO: Add backend URL content processing endpoint when needed
+        processedContent = `URL: ${artifactData.sourceUrl}`;
         
         // Log for debugging
-        console.log('URL processing result:', result);
+        console.log('URL artifact created:', artifactData.sourceUrl);
       } else if (inputType === 'text') {
         if (!artifactData.textContent) {
           throw new Error('Text content is required for text artifacts');
@@ -133,15 +130,12 @@ export const projectApi = {
           throw new Error('Source URL is required for URL artifacts');
         }
         
-        // Process URL content via backend
-        const result = await storageApi.processUrlContent(
-          artifactData.sourceUrl,
-          artifactData.artifactType
-        );
-        processedContent = result?.processedContent || '';
+        // Store URL directly without backend processing for now
+        // TODO: Add backend URL content processing endpoint when needed
+        processedContent = `URL: ${artifactData.sourceUrl}`;
         
         // Log for debugging
-        console.log('URL processing result:', result);
+        console.log('URL artifact created:', artifactData.sourceUrl);
       } else if (inputType === 'text') {
         if (!artifactData.textContent) {
           throw new Error('Text content is required for text artifacts');
