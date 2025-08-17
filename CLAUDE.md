@@ -74,9 +74,11 @@ Key tables:
 
 ### API Integration
 The frontend communicates with the backend API through endpoints:
-- `/analyze-structure`: Extract document structure from uploaded files
-- `/generate-document`: Generate new documents using AI agents
-- `/list-example-docs`: List available example documents
+- `/health`: API health check
+- `/api/templates`: Template management
+- `/api/generate-document`: Generate new documents using AI agents
+
+**Note**: URL artifacts are stored directly without backend processing (no `/process-content` endpoint needed)
 
 ### Security Features
 - Row Level Security (RLS) policies on all database tables
@@ -95,10 +97,16 @@ The frontend communicates with the backend API through endpoints:
 - `frontend/src/lib/supabase.js`: Supabase client and project API functions
 - `frontend/src/contexts/AuthContext.tsx`: Authentication state management
 - `frontend/src/app/projects/[id]/page.tsx`: Main project management interface
+- `frontend/src/lib/api/projectApi.js`: Project and artifact API functions
+- `frontend/src/components/popups/UnifiedArtifactUploadPopup.tsx`: Artifact upload interface
 
 ### Configuration
 - `backend/requirements.txt`: Python dependencies
 - `package.json`: Node.js dependencies and scripts (in root directory)
+
+### Documentation & Context
+- `CLAUDE_CONTEXT_NOTES.md`: Recent issues, fixes, and important context for Claude sessions
+- `PROJECT_STANDARDS.md`: Coding standards and architectural patterns
 
 ## Standards Compliance
 
