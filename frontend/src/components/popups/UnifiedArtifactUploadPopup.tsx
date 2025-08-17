@@ -106,7 +106,7 @@ const UnifiedArtifactUploadPopup: React.FC<UnifiedArtifactUploadPopupProps> = ({
         description: description.trim() ? description.trim() : undefined,
         inputType,
         ...(inputType === 'file' && { file: file! }),
-        ...(inputType === 'url' && { url: url.trim() }),
+        ...(inputType === 'url' && { sourceUrl: url.trim() }),
         ...(inputType === 'text' && { textContent: textContent.trim() }),
       };
 
