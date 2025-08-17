@@ -136,10 +136,22 @@ export const formatDisplayDate = (dateString) => {
 // Increment count helper
 export const incrementCount = async (table, idField, id, countField) => {
   try {
+    // First get current count, then increment
+    const { data: currentData, error: fetchError } = await supabase
+      .from(table)
+      .select(countField)
+      .eq(idField, id)
+      .single();
+
+    if (fetchError) {
+      throw fetchError;
+    }
+
+    const currentCount = currentData[countField] || 0;
     const { error } = await supabase
       .from(table)
       .update({
-        [countField]: supabase.sql`${countField} + 1`
+        [countField]: currentCount + 1
       })
       .eq(idField, id);
 
@@ -154,10 +166,24 @@ export const incrementCount = async (table, idField, id, countField) => {
 // Decrement count helper  
 export const decrementCount = async (table, idField, id, countField) => {
   try {
+    // First get current count, then decrement (ensuring it doesn't go below 0)
+    const { data: currentData, error: fetchError } = await supabase
+      .from(table)
+      .select(countField)
+      .eq(idField, id)
+      .single();
+
+    if (fetchError) {
+      throw fetchError;
+    }
+
+    const currentCount = currentData[countField] || 0;
+    const newCount = Math.max(0, currentCount - 1);
+    
     const { error } = await supabase
       .from(table)
       .update({
-        [countField]: supabase.sql`GREATEST(0, ${countField} - 1)`
+        [countField]: newCount
       })
       .eq(idField, id);
 
