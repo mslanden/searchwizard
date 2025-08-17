@@ -8,14 +8,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 Search Wizard is a full-stack application for AI-powered document generation using a multi-agent system. It consists of:
-- **Frontend**: Next.js 15+ with React 19, Tailwind CSS, and Supabase for auth/database
+- **Frontend**: Next.js 15+ with React 19, Tailwind CSS, and Supabase for auth/database (integrated into main repo)
 - **Backend**: Python FastAPI server with AI agents for document structure analysis and generation
 
 ## Common Development Commands
 
 ### Frontend (Next.js)
 ```bash
-cd frontend
 npm install                # Install dependencies
 npm run dev               # Start development server (http://localhost:3000)
 npm run build             # Build for production
@@ -31,7 +30,7 @@ uvicorn api:app --reload          # Alternative with auto-reload
 ```
 
 ### Environment Variables Required
-Frontend `.env.local`:
+Frontend `.env.local` (in root directory):
 ```
 NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
@@ -94,12 +93,12 @@ The frontend communicates with the backend API through endpoints:
 
 ### Frontend Key Components
 - `frontend/src/lib/supabase.js`: Supabase client and project API functions
-- `frontend/src/contexts/AuthContext.js`: Authentication state management
-- `frontend/src/app/projects/[id]/page.js`: Main project management interface
+- `frontend/src/contexts/AuthContext.tsx`: Authentication state management
+- `frontend/src/app/projects/[id]/page.tsx`: Main project management interface
 
 ### Configuration
 - `backend/requirements.txt`: Python dependencies
-- `frontend/package.json`: Node.js dependencies and scripts
+- `package.json`: Node.js dependencies and scripts (in root directory)
 
 ## Standards Compliance
 
