@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ea587546-9e33-4a98-bb43-94bed9cfc2b5",
+    "name": "personal_brand_logo",
+    "original_filename": "personal_brand_logo.png",
+    "stored_filename": "694b60fd-1031-490e-bf83-dd9b241e826b.png",
+    "file_path": "../data/uploads/694b60fd-1031-490e-bf83-dd9b241e826b.png",
+    "content_type": "image/png",
+    "type": "image",
+    "category": "logos",
+    "description": "Logo",
+    "file_size": 1696046,
+    "created_at": "2025-07-01T17:37:54.189056"
+  },
+  {
+    "id": "210d1559-8073-48d7-ba78-d2528276afd7",
+    "name": "Company Profile",
+    "content": {
+      "company_name": "Landen Inustries",
+      "address": "60603 Table Mountain Rd",
+      "phone": "9514666552",
+      "email": "landenmsjd@gmail.com",
+      "website": "marcelinolanden.com",
+      "description": "Landen industries is Marcelino Landens Business where I create and develop content for people. The main podcast is called Father of lies where there's discussions between demons and the current state of the world. Landen Industries also is where Marcelino develops websites and mvps. Marcelino Landen is also the developer of Still (Bible meditation app) and VibeRise (AI navigation app)."
+    },
+    "type": "company_profile",
+    "category": "company",
+    "created_at": "2025-07-01T17:42:54.983014",
+    "updated_at": "2025-07-01T17:42:54.983041"
+  },
+  {
+    "id": "badba965-81cf-4198-9a9c-f783f7657687",
+    "name": "space-background",
+    "original_filename": "space-background.webp",
+    "stored_filename": "b93c188c-484f-40aa-bcab-41bfc4662dfb.webp",
+    "file_path": "../data/uploads/b93c188c-484f-40aa-bcab-41bfc4662dfb.webp",
+    "content_type": "image/webp",
+    "type": "image",
+    "category": "images",
+    "description": "Background Image",
+    "file_size": 465298,
+    "created_at": "2025-07-01T17:47:48.761133"
+  }
+]

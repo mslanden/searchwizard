@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install system dependencies required for PyMuPDF
+# Install system dependencies required for PyMuPDF and pdf2image
 RUN apt-get update && apt-get install -y \
     libmupdf-dev \
     libfreetype6-dev \
@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     pkg-config \
     build-essential \
+    poppler-utils \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -24,8 +25,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Expose the port the app runs on
-EXPOSE 8000
+# Railway will set the PORT environment variable
+# Don't expose a specific port, let Railway handle it
 
 # Command to run the application
-CMD uvicorn api:app --host 0.0.0.0 --port $PORT
+# Use ${PORT:-8000} to default to 8000 if PORT is not set
+CMD uvicorn api:app --host 0.0.0.0 --port ${PORT:-8000}

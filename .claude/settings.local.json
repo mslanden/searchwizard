@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(node:*)",
+      "Bash(mkdir:*)",
+      "Bash(rg:*)",
+      "Bash(npm run build:*)",
+      "mcp__supabase__execute_sql",
+      "mcp__supabase__apply_migration",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "mcp__supabase__list_projects",
+      "Bash(npm install:*)",
+      "Bash(find:*)",
+      "Bash(pip install:*)",
+      "Bash(pip search llamaparse)",
+      "Bash(python3.11:*)",
+      "Bash(brew install:*)",
+      "Bash(brew services start:*)",
+      "Bash(git init:*)",
+      "WebFetch(domain:searchwizard-production.up.railway.app)",
+      "Bash(python test:*)",
+      "mcp__supabase__list_tables",
+      "Bash(git commit:*)",
+      "Bash(railway up:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "additionalDirectories": [
+      "/Users/marcelinolanden/Documents/workProjects"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
+}
